@@ -80,7 +80,6 @@ const roomHandler = (io, socket, rooms) => {
       callback({ error: true });
     }
   };
-
   const update = (payload) => {
     const index = rooms.findIndex((room) => room.roomId === payload.roomId);
     if (index >= 0) {
